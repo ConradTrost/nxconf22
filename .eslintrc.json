@@ -17,41 +17,24 @@
                 "onlyDependOnLibsWithTags": ["scope:store", "scope:shared"]
               },
               {
-                "sourceTag": "scope:shared",
-                "onlyDependOnLibsWithTags": ["scope:shared", "scope:utils"]
-              },
-              {
-                "sourceTag": "scope:utils",
-                "onlyDependOnLibsWithTags": ["scope:utils"]
-              },
-              {
-                "sourceTag": "scope:ui",
-                "onlyDependOnLibsWithTags": ["scope:ui", "scope:shared"]
-              },
-              {
-                "sourceTag": "scope:feature",
-                "onlyDependOnLibsWithTags": [
-                  "scope:feature",
-                  "scope:store",
-                  "scope:ui",
-                  "scope:shared"
-                ]
-              },
-              {
                 "sourceTag": "scope:api",
-                "onlyDependOnLibsWithTags": [
-                  "scope:api",
-                  "scope:shared",
-                  "scope:utils"
-                ]
+                "onlyDependOnLibsWithTags": ["scope:api", "scope:shared"]
               },
               {
                 "sourceTag": "type:feature",
                 "onlyDependOnLibsWithTags": [
-                  "type:util",
                   "type:feature",
-                  "type:ui"
+                  "type:ui",
+                  "type:util"
                 ]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:ui", "type:util"]
+              },
+              {
+                "sourceTag": "type:util",
+                "onlyDependOnLibsWithTags": ["type:util"]
               }
             ]
           }

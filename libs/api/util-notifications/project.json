@@ -1,25 +1,23 @@
 {
-  "name": "store-util-formatters",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/store/util-formatters/src",
+  "sourceRoot": "libs/api/util-notifications/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/store/util-formatters/**/*.ts"]
+        "lintFilePatterns": ["libs/api/util-notifications/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": ["coverage/libs/api/util-notifications"],
       "options": {
-        "jestConfig": "libs/store/util-formatters/jest.config.ts",
+        "jestConfig": "libs/api/util-notifications/jest.config.ts",
         "passWithNoTests": true
       }
     }
   },
-  "tags": ["scope:store", "type:util"],
-  "implicitDependencies": []
+  "tags": ["type:util", "scope:api"]
 }

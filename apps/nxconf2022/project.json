@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/nxconf2022",
         "index": "apps/nxconf2022/src/index.html",
@@ -19,9 +17,7 @@
           "apps/nxconf2022/src/favicon.ico",
           "apps/nxconf2022/src/assets"
         ],
-        "styles": [
-          "apps/nxconf2022/src/styles.css"
-        ],
+        "styles": ["apps/nxconf2022/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -86,17 +82,12 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/nxconf2022"
-      ],
+      "outputs": ["coverage/apps/nxconf2022"],
       "options": {
         "jestConfig": "apps/nxconf2022/jest.config.ts",
         "passWithNoTests": true
       }
     }
   },
-  "tags": [
-    "scope:nxconf2022",
-    "type:app"
-  ]
+  "tags": ["scope:nxconf2022", "type:app"]
 }

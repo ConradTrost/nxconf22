@@ -7,9 +7,7 @@
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "libs/store/feature-game-detail/jest.config.ts",
         "passWithNoTests": true
@@ -25,8 +23,6 @@
       }
     }
   },
-  "tags": [
-    "scope:store",
-    "type:feature"
-  ]
+  "tags": ["scope:store", "type:feature"],
+  "implicitDependencies": []
 }

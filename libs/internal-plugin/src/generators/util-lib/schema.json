@@ -14,35 +14,28 @@
       },
       "x-prompt": "What name would you like to use?"
     },
-    "tags": {
-      "type": "string",
-      "description": "Add tags to the project (used for linting)",
-      "alias": "t"
-    },
     "directory": {
-      "description": "A directory where the project is placed",
       "type": "string",
+      "description": "The scope of your lib.",
       "x-prompt": {
-        "message": "What directory should the project be placed in?",
+        "message": "Which directory do you want the lib to be in?",
         "type": "list",
         "items": [
           {
             "value": "store",
-            "label": "Store"
+            "label": "store"
           },
           {
             "value": "api",
-            "label": "API"
+            "label": "api"
           },
           {
             "value": "shared",
-            "label": "Shared"
+            "label": "shared"
           }
         ]
       }
     }
   },
-  "required": [
-    "name"
-  ]
+  "required": ["name"]
 }
