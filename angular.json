@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "internal-plugin": "libs/internal-plugin",
+    "internal-plugin-e2e": "apps/internal-plugin-e2e",
     "nxconf2022": "apps/nxconf2022",
     "nxconf2022-e2e": "apps/nxconf2022-e2e",
     "store": "apps/store",
