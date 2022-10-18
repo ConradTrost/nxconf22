@@ -38,6 +38,13 @@
       }
     ]
   },
+  "targetDefaults": {
+    "deploy": {
+      "dependsOn": [
+        "build"
+      ]
+    }
+  },
   "generators": {
     "@nrwl/angular:application": {
       "style": "css",
