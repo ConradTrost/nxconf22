@@ -1,4 +1,5 @@
 {
+  "name": "nxconf2022",
   "projectType": "application",
   "sourceRoot": "apps/nxconf2022/src",
   "prefix": "nxconf22",
