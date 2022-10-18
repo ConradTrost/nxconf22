@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "nxconf2022": "apps/nxconf2022",
+    "nxconf2022-e2e": "apps/nxconf2022-e2e"
+  }
+}
