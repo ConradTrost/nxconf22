@@ -21,6 +21,10 @@
                 "onlyDependOnLibsWithTags": ["scope:api", "scope:shared"]
               },
               {
+                "sourceTag": "scope:admin-ui",
+                "onlyDependOnLibsWithTags": ["scope:admin-ui", "scope:shared"]
+              },
+              {
                 "sourceTag": "type:feature",
                 "onlyDependOnLibsWithTags": [
                   "type:feature",
