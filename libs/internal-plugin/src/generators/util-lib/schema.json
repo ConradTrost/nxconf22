@@ -18,12 +18,31 @@
       "type": "string",
       "description": "Add tags to the project (used for linting)",
       "alias": "t"
-    }, 
+    },
     "directory": {
-      "type": "string",
       "description": "A directory where the project is placed",
-      "alias": "d"
+      "type": "string",
+      "x-prompt": {
+        "message": "What directory should the project be placed in?",
+        "type": "list",
+        "items": [
+          {
+            "value": "store",
+            "label": "Store"
+          },
+          {
+            "value": "api",
+            "label": "API"
+          },
+          {
+            "value": "shared",
+            "label": "Shared"
+          }
+        ]
+      }
     }
   },
-  "required": ["name"]
+  "required": [
+    "name"
+  ]
 }
